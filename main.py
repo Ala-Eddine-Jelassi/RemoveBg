@@ -20,8 +20,8 @@ if inserted_image:
 
     # Load output into PIL image
     output_image = Image.open(io.BytesIO(output_data))
-    st.video("https://youtu.be/tf_V9o-vHA8?si=AjIrnENOfwwVJAPW")
-  
+
+    # Display processed image
     with col2:
         st.image(output_image, caption="Background Removed")
 
@@ -37,7 +37,7 @@ if inserted_image:
         file_name="rembgImage.png",
         mime="image/png"
     )
-    st.video("https://youtu.be/VK9kpfRvrvk?si=Jwvu6ReitLe9a2Qa", autoplay=True)
 
-
-
+# Add video links
+st.video("https://youtu.be/tf_V9o-vHA8?si=AjIrnENOfwwVJAPW")
+st.video("https://youtu.be/VK9kpfRvrvk?si=Jwvu6ReitLe9a2Qa", autoplay=True)
